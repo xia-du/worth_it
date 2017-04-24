@@ -1,6 +1,6 @@
 # Worth It
 
-The Worth It Chrome Extension replaces the price of any item with your own brand of currency, so you can see exactly what it's really worth to you.
+The Worth It Chrome extension replaces the price of any item with your own brand of currency, so you can see exactly what it's really worth to you.
 
 ## Development Tools
 

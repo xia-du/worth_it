@@ -1,0 +1,15 @@
+{
+  "name": "worth-it",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "pluralize": "^4.0.0",
+    "pure": "purecss#^0.6.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/pluralize/pluralize.js",
+      "scripts/contentscript.js"
+    ],
+    "css": [
+      "styles/main.css"
+    ],
+    "run_at": "document_end",
+    "all_frames": false
+  }],
+  "web_accessible_resources": [
+    "fonts/*.woff2",
+    "https://use.fontawesome.com/33ce02c72a.js"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "Worth It",
+    "default_popup": "popup.html"
+  }
+}

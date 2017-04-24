@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- build:css styles/popup-vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="wi-popup">
+      <div class="logo">
+        <img src="images/logo.svg" alt="worth it logo">
+      </div>
+
+      <div class="new-currency-form">
+
+        <form class="pure-form">
+          <fieldset>
+
+            <div class="pure-g">
+              <div class="pure-u-1">
+                <label for="new-currency">Your Currency</label>
+                <input id="new-currency" class="pure-u-23-24" type="text" placeholder="e.g. Latte">
+              </div>
+            </div>
+
+            <div class="pure-u-1">
+              <label for="new-price">Unit Price</label>
+              <input id="new-price" class="pure-u-23-24" type="number" step="0.01" placeholder="e.g. 10.32">
+            </div>
+
+            <div class="pure-u-1">
+              <button type="button" id="add-btn" class="pure-button wi-button pure-button-disabled">
+                <i class="fa fa-plus"></i>
+                Add this currency
+              </button>
+              <span class="status" id="status"></span>
+            </div>
+
+          </fieldset>
+        </form>
+
+      </div>
+
+      <hr>
+
+      <div class="wi-currencies">
+        <table class="pure-table wi-table currency-table">
+          <tbody id="currency-list">
+          </tbody>
+        </table>
+      </div>
+
+      <hr>
+
+      <div class="wi-footer">
+        <img src="images/bg.svg" alt="footer image">
+      </div>
+    </div>
+
+    <!-- build:js scripts/popup-vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/popup.js -->
+    <script src="scripts/popup.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
